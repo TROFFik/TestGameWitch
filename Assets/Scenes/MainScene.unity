@@ -161,7 +161,7 @@ PrefabInstance:
       objectReference: {fileID: 2014339430}
     - target: {fileID: 3135270393151976568, guid: e9e7a7d55142138419770d928e83a136, type: 3}
       propertyPath: _spawnTime
-      value: 2
+      value: 10
       objectReference: {fileID: 0}
     - target: {fileID: 3135270393151976568, guid: e9e7a7d55142138419770d928e83a136, type: 3}
       propertyPath: _mainCamera
@@ -169,7 +169,7 @@ PrefabInstance:
       objectReference: {fileID: 21501681}
     - target: {fileID: 3135270393151976568, guid: e9e7a7d55142138419770d928e83a136, type: 3}
       propertyPath: _maxWhitchCount
-      value: 1
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 3813428878507184315, guid: e9e7a7d55142138419770d928e83a136, type: 3}
       propertyPath: m_LocalPosition.z
@@ -228,6 +228,10 @@ PrefabInstance:
       value: 2147483647
       objectReference: {fileID: 0}
     - target: {fileID: 5443083455974153440, guid: e9e7a7d55142138419770d928e83a136, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -9.35
+      objectReference: {fileID: 0}
+    - target: {fileID: 5443083455974153440, guid: e9e7a7d55142138419770d928e83a136, type: 3}
       propertyPath: m_LocalPosition.y
       value: 0
       objectReference: {fileID: 0}
@@ -236,12 +240,20 @@ PrefabInstance:
       value: -2
       objectReference: {fileID: 0}
     - target: {fileID: 7232208774625117751, guid: e9e7a7d55142138419770d928e83a136, type: 3}
+      propertyPath: container
+      value: 
+      objectReference: {fileID: 2014339431}
+    - target: {fileID: 7232208774625117751, guid: e9e7a7d55142138419770d928e83a136, type: 3}
+      propertyPath: poolObject
+      value: 
+      objectReference: {fileID: 8393111171706537817, guid: 1a5909478982b74489b00639f72f8f50, type: 3}
+    - target: {fileID: 7232208774625117751, guid: e9e7a7d55142138419770d928e83a136, type: 3}
       propertyPath: maxObjectCount
       value: 15
       objectReference: {fileID: 0}
     - target: {fileID: 7232208774625117751, guid: e9e7a7d55142138419770d928e83a136, type: 3}
       propertyPath: minObjectCount
-      value: 1
+      value: 5
       objectReference: {fileID: 0}
     - target: {fileID: 7232208774625117751, guid: e9e7a7d55142138419770d928e83a136, type: 3}
       propertyPath: createObjectsAutomatically
@@ -288,3 +300,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a09c6d4afec507d47b091e034b514fc1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!4 &2014339431 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 5443083455974153440, guid: e9e7a7d55142138419770d928e83a136, type: 3}
+  m_PrefabInstance: {fileID: 74453335}
+  m_PrefabAsset: {fileID: 0}

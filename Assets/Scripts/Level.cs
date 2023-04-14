@@ -20,10 +20,10 @@ public class Level : MonoBehaviour
 
     public float MaxHeight
     {
-        get 
+        get
         {
             return _maxHeight;
-        } 
+        }
     }
 
     public float MinHeight

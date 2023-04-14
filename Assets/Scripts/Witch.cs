@@ -3,7 +3,7 @@ using UnityEngine;
 
 public class Witch : MonoBehaviour
 {
-    [SerializeField] private Sprite[] _statesSprites = new Sprite[3]; 
+    [SerializeField] private Sprite[] _statesSprites = new Sprite[3];
     [SerializeField] private float _speed = 0.0066f;
     [SerializeField] private int _health = 3;
 
@@ -22,7 +22,8 @@ public class Witch : MonoBehaviour
     {
         set
         {
-            _peakPoints = value;
+            _peakPoints = new List<Vector3>();
+            _peakPoints.AddRange(value);
         }
     }
 
@@ -67,7 +68,7 @@ public class Witch : MonoBehaviour
         {
             float height = Random.Range(_level.MinHeight, _level.MaxHeight + 1);
 
-            Vector3 newPoint = new Vector3(_level.PeakPoints[i].x, height, 0);
+            Vector3 newPoint = new Vector3(_peakPoints[i].x, height, 0);
 
             _peakPoints[i] = newPoint;
         }
@@ -83,6 +84,7 @@ public class Witch : MonoBehaviour
             _currentSpeed = _speed;
             _currentHealth = _health;
             _spriteRenderer.sprite = _statesSprites[_currentHealth];
+            _spriteRenderer.flipX = true;
             _currentDistance = 0;
 
             _level.WhitchSCount = 1;

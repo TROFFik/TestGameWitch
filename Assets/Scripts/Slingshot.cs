@@ -18,11 +18,6 @@ public class Slingshot : MonoBehaviour
         inputActions.Enable();
     }
 
-    private void OnDisable()
-    {
-        inputActions.Disable();
-    }
-
     private void Shoot()
     {
         Vector3 touchPosition = Touchscreen.current.position.ReadValue();
@@ -37,7 +32,5 @@ public class Slingshot : MonoBehaviour
                 tempWitch.Hit();
             }
         }
-
-        Debug.DrawRay(_mainCamera.transform.position, -_mainCamera.ScreenToWorldPoint(touchPosition));
     }
 }

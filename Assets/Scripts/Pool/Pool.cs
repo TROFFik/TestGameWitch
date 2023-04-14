@@ -29,6 +29,7 @@ public class Pool : MonoBehaviour
     private PoolObject CreateObject(bool DefaultActive)
     {
         var CreatedObject = Instantiate(poolObject, container);
+
         CreatedObject.gameObject.SetActive(DefaultActive);
 
         poolObjectsList.Add(CreatedObject);
