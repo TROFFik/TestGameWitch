@@ -1,0 +1,40 @@
+{
+    "name": "InputController",
+    "maps": [
+        {
+            "name": "Player",
+            "id": "16fcce6a-af71-471c-bcdb-1da7630dc21c",
+            "actions": [
+                {
+                    "name": "Shoot",
+                    "type": "Button",
+                    "id": "87a15727-3ac4-4ff0-a9bb-a5f4c7258034",
+                    "expectedControlType": "Button",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": false
+                }
+            ],
+            "bindings": [
+                {
+                    "name": "",
+                    "id": "643cba99-d066-4810-99fb-1bb75f7da728",
+                    "path": "<Touchscreen>/touch*/Press",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "Player",
+                    "action": "Shoot",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                }
+            ]
+        }
+    ],
+    "controlSchemes": [
+        {
+            "name": "Player",
+            "bindingGroup": "Player",
+            "devices": []
+        }
+    ]
+}
